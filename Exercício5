@@ -1,0 +1,12 @@
+function somaMatriz(matriz) {
+    return matriz.flat().reduce((acc, num) => acc + num, 0);
+}
+
+// Exemplo de uso:
+const matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+console.log(somaMatriz(matriz));
+// Saída: 45
