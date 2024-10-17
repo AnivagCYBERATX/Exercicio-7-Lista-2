@@ -1,0 +1,11 @@
+function contarOcorrencias(arr) {
+    const freq = {};
+    arr.forEach(num => {
+        freq[num] = (freq[num] || 0) + 1;
+    });
+    return freq;
+}
+
+// Exemplo de uso:
+console.log(contarOcorrencias([1, 2, 2, 3, 1, 4, 4, 4]));
+// Saída: { '1': 2, '2': 2, '3': 1, '4': 3 }
