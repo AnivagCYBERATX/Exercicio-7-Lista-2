@@ -1,0 +1,8 @@
+function ehPalindromo(str) {
+    const strLimpa = str.toLowerCase().replace(/[\W_]/g, '');
+    return strLimpa === strLimpa.split('').reverse().join('');
+}
+
+// Exemplo de uso:
+console.log(ehPalindromo("A man a plan a canal Panama"));
+// Saída: true
